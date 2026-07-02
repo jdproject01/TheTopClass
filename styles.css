@@ -889,6 +889,18 @@ a {
   padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px));
   background: rgba(255, 255, 255, 0.97);
   border-top: 1px solid var(--border);
+  opacity: 0;
+  transform: translateY(14px);
+  pointer-events: none;
+  transition:
+    opacity 0.24s ease,
+    transform 0.24s ease;
+}
+
+.fixed-cta.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 .fixed-cta-btn {
