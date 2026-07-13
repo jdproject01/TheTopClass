@@ -1603,7 +1603,7 @@ body.is-intro-play .intro-fade {
     line-height: 1.8;
   }
 
-  /* Pricing — temporary stack until mobile layout is confirmed */
+  /* Pricing — mobile: 2-col packages, stacked price panels */
   .pricing-intro {
     margin-bottom: 32px;
   }
