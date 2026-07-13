@@ -781,6 +781,246 @@ a {
   transform: rotate(-45deg);
 }
 
+/* ── Pricing ── */
+.pricing {
+  --pricing-primary: #14aca0;
+  --pricing-mint: #f0f9f8;
+  --pricing-primary-light: rgba(20, 172, 160, 0.1);
+  background: var(--pricing-mint);
+}
+
+.pricing-intro {
+  margin-bottom: 40px;
+}
+
+.pricing .section-title {
+  margin: 0 0 14px;
+  font-size: clamp(26px, 4vw, 30px);
+  text-align: left;
+}
+
+.pricing-lead {
+  margin: 0;
+  font-size: 16px;
+  color: var(--text-sub);
+  text-align: left;
+}
+
+.pricing-block {
+  margin-bottom: 40px;
+}
+
+.pricing-packages {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.pricing-package-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 24px 20px;
+  background: var(--bg);
+  border: 1px solid rgba(20, 172, 160, 0.12);
+  border-radius: 12px;
+}
+
+.pricing-package-card--featured {
+  background: var(--pricing-primary);
+  border-color: var(--pricing-primary);
+}
+
+.pricing-package-name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text);
+}
+
+.pricing-package-card--featured .pricing-package-name {
+  color: #fff;
+}
+
+.pricing-package-price {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--pricing-primary);
+}
+
+.pricing-package-card--featured .pricing-package-price {
+  color: #fff;
+}
+
+.pricing-package-desc {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--text-sub);
+}
+
+.pricing-package-card--featured .pricing-package-desc {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.pricing-panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+}
+
+.pricing-panel {
+  min-width: 0;
+}
+
+.pricing-panel-tag {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  color: var(--pricing-primary);
+  background: var(--bg);
+  border-radius: 999px;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 14px 8px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.pricing-table thead th {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-sub);
+  background: transparent;
+  text-align: left;
+}
+
+.pricing-table thead th:nth-child(2),
+.pricing-table thead th:nth-child(3),
+.pricing-table td {
+  text-align: right;
+}
+
+.pricing-table tbody th[scope="row"] {
+  font-weight: 500;
+  color: var(--text);
+  text-align: left;
+}
+
+.pricing-table td {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.pricing-table-consult {
+  font-weight: 500;
+  color: var(--text-sub);
+  text-align: right;
+}
+
+.pricing-panel-note {
+  margin: 12px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-sub);
+  text-align: right;
+}
+
+.pricing-extras {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.pricing-extra-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 16px;
+  background: var(--bg);
+  border-radius: 12px;
+}
+
+.pricing-extra-name {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.pricing-extra-price {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.55;
+  color: var(--text);
+}
+
+.pricing-extra-note {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-sub);
+}
+
+.pricing-extra-note a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pricing-notice {
+  padding: 24px 32px;
+  background: rgba(20, 172, 160, 0.16);
+  border-radius: 12px;
+}
+
+.pricing-notice-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px 40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--text);
+  text-align: center;
+}
+
+.pricing-notice-list li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pricing-notice-icon {
+  flex-shrink: 0;
+  font-size: 16px;
+  line-height: 1;
+}
+
 /* ── About ── */
 .about {
   background: var(--bg);
@@ -951,6 +1191,11 @@ a {
   --reveal-duration: 1.35s;
 }
 
+.pricing-package-card.reveal--fade-up,
+.pricing-extra-card.reveal--fade-up {
+  --reveal-duration: 1.35s;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .reveal {
     opacity: 1;
@@ -1055,7 +1300,9 @@ body.is-intro-play .intro-fade {
   }
 
   .service-showcase-item.reveal--fade-up,
-  .why-item.reveal--fade-up {
+  .why-item.reveal--fade-up,
+  .pricing-package-card.reveal--fade-up,
+  .pricing-extra-card.reveal--fade-up {
     --reveal-duration: 1.35s;
   }
 
@@ -1354,6 +1601,99 @@ body.is-intro-play .intro-fade {
   .scope-effect-body {
     font-size: 13px;
     line-height: 1.8;
+  }
+
+  /* Pricing — temporary stack until mobile layout is confirmed */
+  .pricing-intro {
+    margin-bottom: 32px;
+  }
+
+  .pricing .section-title {
+    font-size: 24px;
+  }
+
+  .pricing-lead {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .pricing-block {
+    margin-bottom: 36px;
+  }
+
+  .pricing-packages {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .pricing-package-card {
+    gap: 8px;
+    padding: 18px 14px;
+  }
+
+  .pricing-package-name {
+    font-size: 13px;
+  }
+
+  .pricing-package-price {
+    font-size: 22px;
+  }
+
+  .pricing-package-desc {
+    font-size: 13px;
+  }
+
+  .pricing-panels {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-bottom: 32px;
+    padding-top: 32px;
+  }
+
+  .pricing-table {
+    font-size: 14px;
+  }
+
+  .pricing-table th,
+  .pricing-table td {
+    padding: 12px 6px;
+  }
+
+  .pricing-panel-note {
+    font-size: 12px;
+  }
+
+  .pricing-extras {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .pricing-extra-card {
+    padding: 16px 14px;
+  }
+
+  .pricing-extra-name {
+    font-size: 14px;
+  }
+
+  .pricing-extra-price {
+    font-size: 14px;
+  }
+
+  .pricing-extra-note {
+    font-size: 13px;
+  }
+
+  .pricing-notice {
+    padding: 20px 16px;
+  }
+
+  .pricing-notice-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    font-size: 14px;
+    text-align: center;
   }
 
   /* About */
