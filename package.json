@@ -1,0 +1,10 @@
+{
+  "name": "thetopclass",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "resend": "^4.5.1"
+  }
+}

@@ -111,7 +111,7 @@
             </p>
           </div>
           <ul class="service-showcase">
-            <li class="service-showcase-item service-showcase-item--featured">
+            <li class="service-showcase-item">
               <div class="service-showcase-media">
                 <img
                   src="assets/images/service-01-julnun.png"
@@ -126,7 +126,7 @@
                 <p class="service-showcase-desc">오염되고 갈라진 줄눈, 새것처럼</p>
               </div>
             </li>
-            <li class="service-showcase-item service-showcase-item--featured">
+            <li class="service-showcase-item">
               <div class="service-showcase-media">
                 <img
                   src="assets/images/service-02-cleaning.png"
@@ -140,7 +140,7 @@
                 <p class="service-showcase-desc">입주 전, 이사 전<br />깨끗한 시작을 만듭니다</p>
               </div>
             </li>
-            <li class="service-showcase-item service-showcase-item--compact">
+            <li class="service-showcase-item">
               <div class="service-showcase-media">
                 <img
                   src="assets/images/service-03-elastic-coat.png"
@@ -154,7 +154,7 @@
                 <p class="service-showcase-desc">갈라지고 들뜬 베란다 벽면,<br />탄성코팅으로 새롭게</p>
               </div>
             </li>
-            <li class="service-showcase-item service-showcase-item--compact">
+            <li class="service-showcase-item">
               <div class="service-showcase-media">
                 <img
                   src="assets/images/service-04-ceramic.png"
@@ -168,7 +168,7 @@
                 <p class="service-showcase-desc">주방 상판, 욕실까지<br />위생적이고 오래가는 코팅</p>
               </div>
             </li>
-            <li class="service-showcase-item service-showcase-item--compact">
+            <li class="service-showcase-item">
               <div class="service-showcase-media">
                 <img
                   src="assets/images/service-05-insulation.png"
@@ -180,6 +180,20 @@
               <div class="service-showcase-copy">
                 <p class="service-showcase-name">단열필름</p>
                 <p class="service-showcase-desc">창문 단열부터 챙기는<br />똑똑한 시공</p>
+              </div>
+            </li>
+            <li class="service-showcase-item">
+              <div class="service-showcase-media">
+                <img
+                  src="assets/images/service-06-interior-film.png"
+                  alt="인테리어필름 시공 예시"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="service-showcase-copy">
+                <p class="service-showcase-name">인테리어필름</p>
+                <p class="service-showcase-desc">철거 없이 새것처럼<br />문·가구·벽면을 필름 하나로 바꿉니다</p>
               </div>
             </li>
           </ul>
@@ -380,6 +394,35 @@
                 </div>
               </div>
             </article>
+            <article class="scope-block scope-block--split">
+              <span class="scope-tag">인테리어필름</span>
+              <div class="scope-block-inner">
+                <div class="img-slot img-slot--landscape img-slot--filled">
+                  <img
+                    src="assets/images/scope-06-interior-film.png"
+                    alt="인테리어필름 시공 범위 — 문·가구·벽면"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="scope-copy">
+                  <ul class="check-list check-list--compact">
+                    <li>현관문 · 방문 · 문틀</li>
+                    <li>싱크대 상판 · 하판</li>
+                    <li>붙박이장 · 가구 표면</li>
+                    <li>벽면 · 몰딩 · 걸레받이</li>
+                  </ul>
+                  <div class="scope-effect">
+                    <span class="scope-effect-label">시공효과</span>
+                    <p class="scope-effect-lead">철거 없이 분위기를 바꿉니다</p>
+                    <p class="scope-effect-body">
+                      기존 표면 위에 필름을 시공해<br />
+                      새 인테리어처럼 연출할 수 있습니다
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -532,6 +575,11 @@
                   <a href="tel:01063456779">📞 010-6345-6779</a>
                 </p>
               </article>
+              <article class="pricing-extra-card">
+                <h4 class="pricing-extra-name">인테리어필름</h4>
+                <p class="pricing-extra-price">시공 범위·면적·필름 종류에 따라 달라집니다</p>
+                <p class="pricing-extra-note">사진 확인 후 견적 상담 가능합니다</p>
+              </article>
             </div>
           </div>
 
@@ -594,6 +642,114 @@
           </a>
         </div>
       </div>
+
+      <section class="inquiry" id="inquiry" aria-labelledby="inquiry-title">
+        <div class="container inquiry-inner">
+          <div class="inquiry-intro">
+            <h2 id="inquiry-title" class="inquiry-title">온라인 문의</h2>
+            <p class="inquiry-desc">남겨주시면 확인 후 연락드리겠습니다.</p>
+          </div>
+          <form id="inquiry-form" class="inquiry-form" novalidate>
+            <div class="inquiry-grid">
+              <div class="inquiry-field">
+                <label for="inquiry-name">이름 <span class="inquiry-required">*</span></label>
+                <input
+                  type="text"
+                  id="inquiry-name"
+                  name="name"
+                  autocomplete="name"
+                  required
+                  maxlength="50"
+                  placeholder="성함을 입력해 주세요"
+                />
+              </div>
+              <div class="inquiry-field">
+                <label for="inquiry-phone">연락처 <span class="inquiry-required">*</span></label>
+                <input
+                  type="tel"
+                  id="inquiry-phone"
+                  name="phone"
+                  autocomplete="tel"
+                  required
+                  maxlength="20"
+                  placeholder="010-0000-0000"
+                />
+              </div>
+              <div class="inquiry-field inquiry-field--full">
+                <label for="inquiry-service">희망 서비스</label>
+                <select id="inquiry-service" name="service">
+                  <option value="">선택해 주세요 (선택)</option>
+                  <option value="줄눈시공">줄눈시공</option>
+                  <option value="입주청소">입주청소 · 이사청소</option>
+                  <option value="탄성코트">탄성코트</option>
+                  <option value="세라믹코팅">세라믹코팅</option>
+                  <option value="단열필름">단열필름</option>
+                  <option value="인테리어필름">인테리어필름</option>
+                  <option value="기타">기타 · 상담</option>
+                </select>
+              </div>
+              <div class="inquiry-field inquiry-field--full">
+                <label for="inquiry-message">문의내용 <span class="inquiry-required">*</span></label>
+                <textarea
+                  id="inquiry-message"
+                  name="message"
+                  rows="5"
+                  required
+                  maxlength="2000"
+                  placeholder="시공 희망 공간, 일정 등 편하게 남겨 주세요."
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="inquiry-privacy">
+              <div class="inquiry-privacy-line">
+                <label class="inquiry-privacy-check">
+                  <input type="checkbox" id="inquiry-privacy" name="privacy" required />
+                  <span><em>(필수)</em> 개인정보 수집·이용에 동의합니다.</span>
+                </label>
+                <button
+                  type="button"
+                  class="inquiry-privacy-toggle"
+                  id="inquiry-privacy-toggle"
+                  aria-expanded="false"
+                  aria-controls="inquiry-privacy-detail"
+                >
+                  내용보기
+                </button>
+              </div>
+              <p id="inquiry-privacy-error" class="inquiry-privacy-error" hidden>
+                개인정보 수집·이용에 동의해 주세요.
+              </p>
+              <div class="inquiry-privacy-box" id="inquiry-privacy-detail" hidden>
+                <p><strong>1. 수집 항목</strong></p>
+                <p>이름, 연락처, 희망 서비스(선택), 문의내용</p>
+                <p><strong>2. 수집·이용 목적</strong></p>
+                <p>온라인 문의 접수, 견적·상담 안내 및 고객 응대</p>
+                <p><strong>3. 보유·이용 기간</strong></p>
+                <p>
+                  문의 처리 완료 후 3년<br />
+                  (관련 법령에 따라 보존이 필요한 경우 해당 기간 동안 보관)
+                </p>
+                <p><strong>4. 개인정보 처리 위탁</strong></p>
+                <p>
+                  문의 메일 발송을 위해 이메일 발송 서비스(Resend)를 이용할 수 있습니다.
+                </p>
+                <p><strong>5. 동의 거부 권리</strong></p>
+                <p>
+                  개인정보 수집·이용에 동의하지 않을 수 있으나, 동의하지 않을 경우
+                  온라인 문의 접수가 제한됩니다.
+                </p>
+              </div>
+            </div>
+
+            <div class="inquiry-actions">
+              <button type="submit" class="btn btn-primary">문의 보내기</button>
+              <p id="inquiry-status" class="inquiry-status" hidden role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+
       <div class="footer-info">
         <div class="container footer-info-inner">
           <div class="footer-col" aria-label="사업자정보">
@@ -622,5 +778,6 @@
     </div>
     <script src="page-intro.js" defer></script>
     <script src="scroll-reveal.js" defer></script>
+    <script src="contact-form.js" defer></script>
   </body>
 </html>
