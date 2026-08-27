@@ -92,51 +92,6 @@
     }, OBSERVER_OPTIONS);
   }
 
-  function initMobileFixedCta() {
-    var cta = document.querySelector(".fixed-cta");
-    var hero = document.querySelector(".hero");
-    var footer = document.querySelector(".site-footer");
-    if (!cta || !hero || !footer) return;
-
-    var mobileQuery = window.matchMedia("(pointer: coarse) and (max-width: 1024px)");
-    var ticking = false;
-
-    function shouldShowCta() {
-      if (!mobileQuery.matches) return false;
-
-      var heroBottom = hero.getBoundingClientRect().bottom;
-      var footerTop = footer.getBoundingClientRect().top;
-
-      var passedHero = heroBottom <= window.innerHeight * 0.2;
-      var nearFooter = footerTop <= window.innerHeight + 56;
-
-      return passedHero && !nearFooter;
-    }
-
-    function syncCtaVisibility() {
-      cta.classList.toggle("is-visible", shouldShowCta());
-    }
-
-    function onScrollOrResize() {
-      if (ticking) return;
-      ticking = true;
-      window.requestAnimationFrame(function () {
-        syncCtaVisibility();
-        ticking = false;
-      });
-    }
-
-    window.addEventListener("scroll", onScrollOrResize, { passive: true });
-    window.addEventListener("resize", onScrollOrResize);
-    if (typeof mobileQuery.addEventListener === "function") {
-      mobileQuery.addEventListener("change", onScrollOrResize);
-    } else if (typeof mobileQuery.addListener === "function") {
-      mobileQuery.addListener(onScrollOrResize);
-    }
-
-    syncCtaVisibility();
-  }
-
   function init() {
     var singleTargets = [];
 
@@ -172,8 +127,6 @@
     singleTargets.forEach(function (el) {
       observer.observe(el);
     });
-
-    initMobileFixedCta();
   }
 
   if (document.readyState === "loading") {
