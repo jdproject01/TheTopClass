@@ -2,7 +2,6 @@
   var STAGGER_GROUPS = [
     { parent: ".service-showcase", child: ".service-showcase-item", effect: "fade-up" },
     { parent: ".why-grid", child: ".why-item", effect: "fade-up" },
-    { parent: ".pricing-packages", child: ".pricing-package-card", effect: "fade-up" },
     { parent: ".pricing-extras", child: ".pricing-extra-card", effect: "fade-up" },
   ];
 
@@ -11,7 +10,7 @@
     { selector: ".scope-block", effect: "fade-up" },
     { selector: ".pricing-intro", effect: "fade-up" },
     { selector: ".pricing-panels", effect: "fade-up" },
-    { selector: ".pricing-notice", effect: "fade-in" },
+    { selector: ".pricing-film", effect: "fade-up" },
     { selector: ".about-inner", effect: "fade-up" },
   ];
 

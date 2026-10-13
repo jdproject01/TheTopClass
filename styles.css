@@ -816,70 +816,36 @@ a {
   margin-bottom: 40px;
 }
 
-.pricing-packages {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-}
-
-.pricing-package-card {
+.pricing-block-head {
   display: flex;
-  flex-direction: column;
+  align-items: baseline;
+  justify-content: flex-start;
   gap: 10px;
-  padding: 24px 20px;
-  background: var(--bg);
-  border: 1px solid rgba(20, 172, 160, 0.12);
-  border-radius: 12px;
+  margin-bottom: 20px;
 }
 
-.pricing-package-card--featured {
-  background: var(--pricing-primary);
-  border-color: var(--pricing-primary);
-}
-
-.pricing-package-name {
+.pricing-block-title {
   margin: 0;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.4;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
   color: var(--text);
 }
 
-.pricing-package-card--featured .pricing-package-name {
-  color: #fff;
-}
-
-.pricing-package-price {
+.pricing-block-aside {
   margin: 0;
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 1.25;
-  letter-spacing: -0.02em;
-  color: var(--pricing-primary);
-}
-
-.pricing-package-card--featured .pricing-package-price {
-  color: #fff;
-}
-
-.pricing-package-desc {
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.55;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
   color: var(--text-sub);
-}
-
-.pricing-package-card--featured .pricing-package-desc {
-  color: rgba(255, 255, 255, 0.9);
 }
 
 .pricing-panels {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  margin-bottom: 40px;
-  padding-top: 40px;
-  border-top: 1px solid var(--border);
+  margin-bottom: 20px;
 }
 
 .pricing-panel {
@@ -920,6 +886,7 @@ a {
   color: var(--text-sub);
   background: transparent;
   text-align: left;
+  white-space: nowrap;
 }
 
 .pricing-table thead th:nth-child(2),
@@ -939,23 +906,20 @@ a {
   color: var(--text);
 }
 
-.pricing-table-consult {
-  font-weight: 500;
-  color: var(--text-sub);
-  text-align: right;
+.pricing-table--film {
+  max-width: 720px;
 }
 
-.pricing-panel-note {
-  margin: 12px 0 0;
-  font-size: 13px;
-  line-height: 1.5;
+.pricing-sheet-note {
+  margin: 0 0 20px;
+  font-size: 14px;
+  line-height: 1.65;
   color: var(--text-sub);
-  text-align: right;
 }
 
 .pricing-extras {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
 
@@ -1004,8 +968,8 @@ a {
 .pricing-notice-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px 40px;
+  justify-content: space-between;
+  gap: 12px 40px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1019,6 +983,7 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  white-space: nowrap;
 }
 
 .pricing-notice-icon {
@@ -1392,7 +1357,6 @@ a {
   --reveal-duration: 1.35s;
 }
 
-.pricing-package-card.reveal--fade-up,
 .pricing-extra-card.reveal--fade-up {
   --reveal-duration: 1.35s;
 }
@@ -1498,7 +1462,6 @@ body.is-intro-play .intro-fade {
 
   .service-showcase-item.reveal--fade-up,
   .why-item.reveal--fade-up,
-  .pricing-package-card.reveal--fade-up,
   .pricing-extra-card.reveal--fade-up {
     --reveal-duration: 1.35s;
   }
@@ -1849,7 +1812,7 @@ body.is-intro-play .intro-fade {
     line-height: 1.8;
   }
 
-  /* Pricing — mobile: 2-col packages, stacked price panels */
+  /* Pricing — mobile: stacked price panels */
   .pricing-intro {
     margin-bottom: 32px;
   }
@@ -1867,33 +1830,27 @@ body.is-intro-play .intro-fade {
     margin-bottom: 36px;
   }
 
-  .pricing-packages {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+  .pricing-block-head {
+    flex-wrap: wrap;
+    margin-bottom: 16px;
   }
 
-  .pricing-package-card {
-    gap: 8px;
-    padding: 18px 14px;
+  .pricing-block-title {
+    font-size: 20px;
   }
 
-  .pricing-package-name {
-    font-size: 13px;
-  }
-
-  .pricing-package-price {
-    font-size: 22px;
-  }
-
-  .pricing-package-desc {
-    font-size: 13px;
+  .pricing-block-aside {
+    font-size: 12px;
   }
 
   .pricing-panels {
     grid-template-columns: 1fr;
     gap: 32px;
-    margin-bottom: 32px;
-    padding-top: 32px;
+    margin-bottom: 16px;
+  }
+
+  .pricing-sheet-note {
+    font-size: 13px;
   }
 
   .pricing-table {
@@ -1903,10 +1860,6 @@ body.is-intro-play .intro-fade {
   .pricing-table th,
   .pricing-table td {
     padding: 12px 6px;
-  }
-
-  .pricing-panel-note {
-    font-size: 12px;
   }
 
   .pricing-extras {
